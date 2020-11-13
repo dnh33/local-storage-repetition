@@ -8,3 +8,29 @@ form input[type="checkbox"] {
     width: 1px;
     visibility: hidden;
 }
+
+form label[for="darkmodeToggle"] {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 1em;
+    border: 1px solid lightgrey;
+    border-radius: 1em;
+}
+
+form label[for="darkmodeToggle"]::after {
+    position: absolute;
+    content: "";
+    height: 0.9em;
+    width: 0.9em;
+    background-color: lightblue;
+    border-radius: 50%;
+    top: 0.0330rem;
+    left: 0.0330rem;
+    transition: background-color 800ms ease, transform 800ms ease;
+}
+
+input[type="checkbox"]:checked~label::after {
+    background-color: darkblue;
+    transform: translateX(34px)
+}
