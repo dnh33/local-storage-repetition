@@ -16,6 +16,7 @@ form label[for="darkmodeToggle"] {
     height: 1em;
     border: 1px solid lightgrey;
     border-radius: 1em;
+    transition: background-color 800ms ease;
 }
 
 form label[for="darkmodeToggle"]::after {
@@ -33,4 +34,8 @@ form label[for="darkmodeToggle"]::after {
 input[type="checkbox"]:checked~label::after {
     background-color: darkblue;
     transform: translateX(34px)
+}
+
+input[type="checkbox"]:checked~label {
+    background-color: goldenrod;
 }
