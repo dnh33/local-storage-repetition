@@ -1,6 +1,7 @@
 body {
     background: hsl(0, 0%, 97%);
     color: hsl(0, 0%, 7%);
+    transition: background-color 800ms ease, color 800ms ease;
 }
 
 form input[type="checkbox"] {
@@ -38,4 +39,9 @@ input[type="checkbox"]:checked~label::after {
 
 input[type="checkbox"]:checked~label {
     background-color: goldenrod;
+}
+
+body.darkmode {
+    background-color: hsl(210, 28% 27%);
+    color: hsl(0, 7%, 86%);
 }
