@@ -1,0 +1,10 @@
+body {
+    background: hsl(0, 0%, 97%);
+    color: hsl(0, 0%, 7%);
+}
+
+form input[type="checkbox"] {
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+}
