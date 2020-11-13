@@ -38,10 +38,10 @@ input[type="checkbox"]:checked~label::after {
 }
 
 input[type="checkbox"]:checked~label {
-    background-color: goldenrod;
+    background-color: lightblue;
 }
 
 body.darkmode {
-    background-color: hsl(210, 28% 27%);
+    background-color: hsl(210, 7%, 27%);
     color: hsl(0, 7%, 86%);
 }
